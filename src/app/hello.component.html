@@ -1,0 +1,14 @@
+<h1>Hello {{ name }}!</h1>
+
+<h3 class="text-center text-success">ViewChild</h3>
+
+<p #highlight>This is an mesaage</p>
+<p #highlight>This is an mesaage</p>
+
+<h3>Counter {{ child?.counter }}</h3>
+<div>
+  <button class="btn btn-success me-2" (click)="inc()">Inc</button>
+  <button class="btn btn-danger" (click)="dec()">Dec</button>
+</div>
+
+<div><app-counter #childView></app-counter></div>
